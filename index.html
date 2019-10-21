@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CCC Modules</title>
+    <link rel="stylesheet" href="assets/style.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2>CCC <b>Modules</b></h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="#moduleModal" onclick="renderModal('Add','null')" class="btn btn-primary" onclick="renderModalBody()" data-toggle="modal">
+                            <i class="material-icons">&#xE147;</i>
+                            <span>Add New </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Service Name</th>
+                        <th>Descriptions</th>
+                        <th>URL Repo</th>
+                        <th>Developers</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="moduleTable">
+
+                    <!-- Tempat display data -->
+
+
+                </tbody>
+            </table>
+            <div class="clearfix" id="pageTable">
+                <div class="hint-text">Showing of <b id="totalPage">X</b> entries</div>
+                <ul class="pagination" id="pagination">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Modal HTML -->
+    <div id="moduleModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="mainModal">
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="assets/lib.js"></script>
+
+    <!--   import jquery : DOM lib   -->
+    
+    <!--    import axios : AJAX lib    -->
+
+
+
+
+    <script src="assets/main.js"></script>
+
+</body>
+
+</html>
